@@ -1,0 +1,19 @@
+<div>
+  <div>Male</div>
+    <ul>
+      <li *ngFor="let ma of male">{{ma.name}}
+        <ul>
+          <li *ngFor="let ca of ma.cat">{{ca.name}}</li>
+        </ul>
+      </li>
+    </ul>
+  <div>FeMale</div>
+  <ul>
+    <li *ngFor="let fema of female">{{fema.name}}
+      <ul>
+        <li *ngFor="let ca of fema.cat">{{ca.name}}</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<router-outlet></router-outlet>
